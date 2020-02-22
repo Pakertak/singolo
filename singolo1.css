@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
+@font-face { 
+    font-family: 'Lato'; 
+    src: url('assets/Lato-Regular.ttf');                                    
+    font-weight: normal; 
+    font-style: normal; 
+  }
+  @font-face { 
+    font-family: 'Roboto'; 
+    src: url('assets/Roboto-Regular.ttf');                                    
+    font-weight: normal; 
+    font-style: normal; 
+  }
 body{
    width: 1020px; 
    margin: 0 auto;
@@ -158,7 +169,7 @@ p{
     line-height: 30px;
     color: #767e9e;
     font-weight: 300;
-    text-align: left;
+    text-align: justify;
 }
 .articles{
     display: flex;
@@ -171,7 +182,7 @@ h3{
     font-size: 18px;
     line-height: 18px;
     color: #666d89;
-    font-family: "Lato";
+    font-family: "Lato","Roboto",sans-serif;
     font-weight: 900;
     text-align: justify;
     text-decoration: bold;
@@ -182,7 +193,7 @@ h3{
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
-    font-family: "Lato";
+    font-family: "Lato","Roboto",sans-serif;
     font-weight: 400;
     text-align: justify;
     text-decoration: solid;
