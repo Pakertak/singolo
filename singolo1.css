@@ -129,6 +129,9 @@ main{
     left: 42px;
     background: url(assets/left.png);
 }
+.main-slider--left:hover{
+    background-color: brown;
+}
 .main-slider--right{
     width: 16px;
     height: 27px;
@@ -138,6 +141,9 @@ main{
     top: 280px;
     left: 965px;
     background: url(assets/right.png);
+}
+.main-slider--right:hover{
+    background-color: brown;
 }
 .main-sliderBottom{
     width: 100%;
@@ -191,7 +197,7 @@ h3{
 .articles p{
     width: 220px;
     margin: 0;
-    font-size: 12px;
+    font-size: 11.5px;
     line-height: 22px;
     color: #767e9e;
     font-family: "Lato","Roboto",sans-serif;
