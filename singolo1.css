@@ -129,6 +129,9 @@ main{
     left: 42px;
     background: url(assets/left.png);
 }
+.main-slider--left:hover{
+    background-color: brown;
+}
 .main-slider--right{
     width: 16px;
     height: 27px;
@@ -138,6 +141,9 @@ main{
     top: 280px;
     left: 965px;
     background: url(assets/right.png);
+}
+.main-slider--right:hover{
+    background-color: brown;
 }
 .main-sliderBottom{
     width: 100%;
@@ -245,7 +251,6 @@ h3{
     height: 60px;
     background: url(assets/bubble.png);
 }
-
 .articles-feelLikeAStar--img{
     margin: 0 21px 0 21px;
     width: 60px;
