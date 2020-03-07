@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+@font-face { 
+    font-family: 'Lato'; 
+    src: url('assets/Lato-Regular.ttf');                                    
+    font-weight: normal; 
+    font-style: normal; 
+  }
+
+  @font-face { 
+    font-family: 'Roboto'; 
+    src: url('assets/Roboto-Regular.ttf');                                    
+    font-weight: normal; 
+    font-style: normal; 
+  }
+
+*{    margin:  0;
+    padding:  0;
+    box-sizing:  border-box;
+    text-transform:  none;
+    text-decoration:  none;
+    list-style:  none;
+    font-family: "Lato","Roboto",sans-serif;
+    text-align:  center;
+}
+
+body{
+  width: 1020px; 
+  margin: 0 auto;
+ }
+
+ .container{
+  width: 940px;
+  margin: 0 auto;
+ }
+
+ .form{
+    display: flex;
+    height: 655px;
+    position: relative;
+    flex-wrap: wrap;
+    background-color: #f06c64;
+ }
+
+ .formMain{
+   display: flex;
+ }
+ .hForm{
+  margin: 0;
+  padding-top: 70px;
+  font-size: 30px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-weight: 900;
+  text-align: left;
+ }
+
+ .pForm{
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  font-size: 17.5px;
+  line-height: 30px;
+  color: #f0d8d9;
+  font-weight: 300;
+  text-align: left;
+ }
+
+ .formInputs{
+   width: 620px;
+   height: 365px;
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .input{
+  width: 619px;
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d6564f;
+ }
+
+ input[ type="text" ]::placeholder{
+  margin: 0;
+  padding-left: 15px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-weight: 400;
+  text-align: left;
+ }
+
+ .input-big{
+  width: 619px;
+  height: 202px;
+  border: none;
+  border-radius: 5px;
+  align-items: flex-start;
+  background-color: #d6564f;
+ }
+
+ textarea::placeholder{
+  padding-top: 12px;
+  padding-left: 15px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-weight: 400;
+  text-align: left;
+ }
+
+ .Contacts{
+   display: flex;
+   width: 300px;
+   height: 195px;
+   margin-left: 20px;
+   flex-wrap: wrap;
+ }
+
+ .form-contacts--h{
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-weight: 900;
+  text-align: left;
+ }
+
+ .form-contacts--p{
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 11.5px;
+  line-height: 20px;
+  color: #f0d8d9;
+  font-weight: 400;
+  text-align: left;
+ }
+
+ .form-contacts-single{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+ }
+
+ .form-icons{
+  width: 25px;
+  height: 17px;
+ }
+ .form-icons-p{
+  width: 200px;
+  height: 20px;
+  margin: 0;
+  font-size: 11px;
+  line-height: 12px;
+  color: #f0d8d9;
+  font-weight: 400;
+  text-align: left;
+ }
+ .form-contacts-addres-icon{
+  background: url(assets/formLocationIcon.png) no-repeat;
+  background-position-x: 2px;
+  background-position-y: 1px;
+ }
+
+ .form-contacts-phone-icon{
+  background: url(assets/formPhoneIcon.png) no-repeat;
+  background-position-x: 1px;
+  background-position-y: 1px;
+ }
+
+ .form-contacts-mail-icon{
+  background: url(assets/formMailIcon.png) no-repeat;
+  background-position-y: 3px;
+ }
+ .formButton{
+   width: 300px;
+   height: 125px;
+   margin-top: 30px;
+   border-radius: 5px;
+   border: 0px solid #d6564f;
+   background-color: #fd958e;
+   font-size: 20px;
+   color: #f0d8d9;
+ }
+.formBottomLine{
+  width: 1020px;
+  height: 7px;
+  position: relative;
+  top: 28px;
+  background: url(assets/formBottom.png) no-repeat;
+}
+footer{
+  height: 75px;
+  background-color: #2d303a;
+}
+footer section{
+  display: flex;
+  flex-direction: row;
+}
+.footer-p{
+  padding-top: 32px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #666d89;
+  font-weight: 400;
+  text-align: left;
+}
+.footer-icons{
+  width: 34px;
+  height: 34px;
+  margin-right: 6.5px;
+  margin-top: 26px;
+  
+}
+.footer-icon-facebook{
+  margin-left: 680px;
+  background: url(assets/facebook.png) no-repeat;
+}
+.footer-icon-google{
+  background: url(assets/Google.png) no-repeat;
+}
+.footer-icon-twiter{
+  background: url(assets/Twitter.png) no-repeat;
+}
+.footer-icon-linkedLn{
+  margin-right: 0;
+  background: url(assets/LinkedIn.png) no-repeat;
+}
+.footerBottomLine{
+  width: 1020px;
+  height: 7px;
+  position: relative;
+  top: 11px;
+  background: url(assets/footerBottomLine.png) no-repeat;
+}
