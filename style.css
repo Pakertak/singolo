@@ -361,19 +361,6 @@ h3{
     top: 498px;
     background: #ffffff;
 }
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-@font-face { 
-    font-family: 'Lato'; 
-    src: url('assets/Lato-Regular.ttf');                                    
-    font-weight: normal; 
-    font-style: normal; 
-  }
-  @font-face { 
-    font-family: 'Roboto'; 
-    src: url('assets/Roboto-Regular.ttf');                                    
-    font-weight: normal; 
-    font-style: normal; 
-  }
 
 body{
     width: 1020px; 
@@ -656,21 +643,6 @@ article p{
     height: 34px;
     background: url(assets/LinkedIn.png) no-repeat; 
 }
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
-@font-face { 
-    font-family: 'Lato'; 
-    src: url('assets/Lato-Regular.ttf');                                    
-    font-weight: normal; 
-    font-style: normal; 
-  }
-
-  @font-face { 
-    font-family: 'Roboto'; 
-    src: url('assets/Roboto-Regular.ttf');                                    
-    font-weight: normal; 
-    font-style: normal; 
-  }
 
 *{    margin:  0;
     padding:  0;
