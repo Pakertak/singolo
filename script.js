@@ -24,14 +24,25 @@ PORTFOLIO_MENU.addEventListener('click', (event)=>{
 })
 
 BUTTON.addEventListener('click', ()=>{
-    const subject = document.getElementById('subject').value.toString();
-    if(subject!='') document.getElementById('resultSubject').innerText = ("Тема: " + subject);
-    else document.getElementById('resultSubject').innerText = 'Без темы';
-    const description = document.getElementById('description').value.toString();
-    if(description!='') document.getElementById('resultDescription').innerText = ("Описание: " + description);
-    else document.getElementById('resultDescription').innerText = 'Без описания';
-    document.getElementById('messageBlock').classList.remove('hidden');
+    
 })
+
+BUTTON.addEventListener("click", (event) => {
+    let requiredFields = [...document.querySelectorAll("[required]")];
+    let isValid = node => node.checkValidity();
+  
+    //Check if all required fields filled with valid data
+    if ( requiredFields.every(isValid) ) {
+      event.preventDefault();
+      const subject = document.getElementById('subject').value.toString();
+        if(subject!='') document.getElementById('resultSubject').innerText = ("Тема: " + subject);
+        else document.getElementById('resultSubject').innerText = 'Без темы';
+        const description = document.getElementById('description').value.toString();
+        if(description!='') document.getElementById('resultDescription').innerText = ("Описание: " + description);
+        else document.getElementById('resultDescription').innerText = 'Без описания';
+        document.getElementById('messageBlock').classList.remove('hidden');
+    }
+  });
 
 CLOSE_BUTTON.addEventListener('click', ()=>{
     document.getElementById('resultSubject').innerText = '';

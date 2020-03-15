@@ -744,6 +744,14 @@ input{
   font-weight: 400;
   text-align: left;
  }
+ input[ type="email" ]::placeholder{
+    margin: 0;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-weight: 400;
+    text-align: left;
+   }
 
  .input-big{
   width: 619px;

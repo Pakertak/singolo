@@ -167,7 +167,7 @@
                 </section>   
             </section>   
             <section class="form">
-                <form action="form.doc" class="container">
+                <form method="POST" class="container">
                     <p class="hForm">Get a Quote</p>
                     <p class="pForm">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat <br>
                         porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
@@ -175,7 +175,7 @@
                     <div class="formMain">
                         <section class="formInputs">
                             <input type="text" class="input" placeholder="Name (Required)" id="name" required>
-                            <input type="text" class="input" placeholder="Email (Required)" id="email" required>
+                            <input type="email" class="input" placeholder="Email (Required)" id="email" required>
                             <input type="text" class="input" placeholder="Subject" id="subject">
                             <textarea class="input-big" placeholder="Describe your project in detail..." id="description"></textarea>
                         </section>
@@ -199,7 +199,7 @@
                                     <a href="mailto::info@singolo.com" class="form-contacts-mail-icon form-icons"></a>
                                     <p class="form-contacts-mail-p form-icons-p">info@singolo.com </p>
                                 </div>
-                                <input type="button" value="Submit" class="formButton" id="button">
+                                <input type="submit" value="Submit" class="formButton" id="button" formmethod="POST">
                             </div>
                         </section>
                     </div>     
