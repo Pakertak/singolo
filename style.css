@@ -924,7 +924,7 @@ footer section{
   height: 7px;
   position: relative;
   top: 11px;
-  background: url(assets/footerBottomLine.png) no-repeat;
+  background: #323746;
 }
 #messageBlock.hidden{
     display: none;
