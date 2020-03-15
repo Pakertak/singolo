@@ -269,6 +269,7 @@ h2.h2OurServices {
     color: #767e9e;
     font-weight: 300;
     text-align: justify;
+    overflow: hidden;
 }
 .articles{
     display: flex;
@@ -753,6 +754,8 @@ input{
   background-color: #d6564f;
  }
  textarea{
+    max-width: 619px;
+    max-height: 202px;
     padding: 12px;
     outline: none; 
     text-align: left;
