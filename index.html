@@ -5,12 +5,12 @@
         <title>Singolo</title>
         <link href="style.css" rel="stylesheet">
     </head>  
-    <body>
+    <body id="home">
         <header>
             <h1 class="logo">singolo<a class="logo-simbol">*</a></h1>
             <nav>
                 <ul class="navigation" id="headerNav">
-                    <li class="navigation--item navigation--item-selected"><a href="">home</a></li>
+                    <li class="navigation--item navigation--item-selected"><a href="#home">home</a></li>
                     <li class="point"></li>
                     <li class="navigation--item"><a href="#ourServices">services</a></li>
                     <li class="point"></li>
@@ -23,7 +23,6 @@
             </nav> 
             <div class="headerBottom"></div>       
         </header>
-        
         <main>
             <section class="mainSlider">
                 <div class="main-slider--left" id="left"></div>
@@ -121,7 +120,7 @@
                 </section>
                 <figure class="mainBottom"></figure> 
             </section>
-            <section class="footerPortfolio" id="AboutUs">
+            <section class="footerPortfolio" id="AboutUs" >
                 <section class="container">
                     <h2>About Us</h2>
                     <p class="mainParagraph">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor 
@@ -164,9 +163,10 @@
                             </div>
                         </article>
                     </section> 
-                </section>   
+                </section>
+            <div class="aboutUsBottom"></div>   
             </section>   
-            <section class="form">
+            <section class="form" id="contacts">
                 <form method="POST" class="container">
                     <p class="hForm">Get a Quote</p>
                     <p class="pForm">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat <br>
@@ -186,7 +186,7 @@
                                 libero. Nulla sed nunc et tortor luctus faucibus. Morbi at <br>
                                 aliquet turpis, et consequat felis. 
                             </p>
-                            <div class="form-contacts" id="contacts">
+                            <div class="form-contacts">
                                 <div class="form-contacts-single">
                                     <a href="" class="form-contacts-addres-icon form-icons"></a>
                                     <p class="form-contacts-addres-p form-icons-p">Elm St. 14/05 Lost City </p>
