@@ -6,207 +6,225 @@
         <link href="style.css" rel="stylesheet">
     </head>  
     <body>
-    <header>
-        <h1 class="logo">singolo<a class="logo-simbol">*</a></h1>
-        <nav>
-            <ul class="navigation">
-                <li><a class="navigation--item-selected" href="">home</a></li>
-                <li class="point"></li>
-                <li><a class="navigation--item" href="#ourServices">services</a></li>
-                <li class="point"></li>
-                <li><a class="navigation--item" href="#Portfolio">portfolio</a></li>
-                <li class="point"></li>
-                <li><a class="navigation--item" href="#AboutUs">about</a></li>
-                <li class="point"></li>
-                <li><a class="navigation--item" href="#contacts">contact</a></li>
-            </ul>
-        </nav> 
-        <div class="headerBottom"></div>       
-    </header>
-    
-    <main>
-        <section class="main-slider">
-            <div class="main-slider--left"></div>
-            <div class="main-slider--verticalPhone"></div>
-            <div class="main-slider--horizontalPhone"></div>
-            <div class="main-slider--right"></div>
-            <div class="main-sliderBottom"></div>
-        </section>
-        <section class="main-ourServices" id="ourServices">
-            <h2 class="h2OurServices">Our Services</h2>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor
-                <br> ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
-            </p>
-            <section class="articles">
-                <div class="articles-customDesign">
-                    <div class="articles-customDesign--img"></div>
-                    <div class="articles-customDesign--text">
-                        <h3>Custom Design</h3>
-                        <p>Curabitur vestibulum eget mauris quis <br> laoreet.  Phasellus in quam laoreet, viverra <br> lacus ut, ultrices velit.</p>
-                    </div>
-                </div>
-                <div class="articles-inovativIdeas">
-                    <div class="articles-inovativIdeas--img"></div>
-                    <div class="articles-inovativIdeas--text">
-                        <h3>Inovative Ideas</h3>
-                        <p>Quisque luctus, quam eget molestie com- <br> modo, lacus purus cursus purus, nec <br> rutrum tellus dolor id lorem.</p>
-                    </div>
-                </div>
-                <div class="articles-loveIsTheAnswer">
-                    <div class="articles-loveIsTheAnswer--img"></div>
-                    <div class="articles-loveIsTheAnswer--text">
-                        <h3>Love Is The Answer</h3>
-                        <p>Nulla sed nunc et tortor luctus faucibus. <br> Morbi at aliquet turpis, et consequat felis. <br> Quisque condimentum.</p>
-                    </div>
-                </div>
-                <div class="articles-responsiveLayout">
-                    <div class="articles-responsiveLayout--img"></div>
-                    <div class="articles-responsiveLayout--text">
-                        <h3>Responsive Layout</h3>
-                        <p>Sed porttitor placerat rhoncus. In at nunc <br> tellus. Maecenas blandit nunc ligula. Prae- <br> sent elit leo.</p>
-                    </div>
-                </div>
-                <div class="articles-support">
-                    <div class="articles-support--img"></div>
-                    <div class="articles-support--text">
-                        <h3>24 / 7 Support</h3>
-                        <p>Vivamus vel quam lacinia, tincidunt dui <br> non, vehicula nisi. Nulla a sem erat. Pellen- <br> tesque egestas venenatis lorem .</p>
-                    </div>
-                </div>
-                <div class="articles-feelLikeAStar">
-                    <div class="articles-feelLikeAStar--img"></div>
-                    <div class="articles-feelLikeAStar--text">
-                        <h3>Feel Like A Star</h3>
-                        <p>Quisque hendrerit purus dapibus, ornare <br> nibh vitae, viverra nibh. Fusce vitae <br> aliquam tellus.</p>
-                    </div>
-                </div>
-            </section>
-            <div class="textBottom"></div>
-        </section> 
-        <section class="headerPortfolio" id="Portfolio">
-            <section class="header container">
-                <p class="h1Portfolio">Portfolio</p>
-                <p class="pPortfolio">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                <ul class="nav">
-                    <li class="nav-item--selected"><a href="">All</a></li>
-                    <li class="nav-item"><a href="">Web Design</a></li>
-                    <li class="nav-item"><a href="">Graphic Design</a></li>
-                    <li class="nav-item"><a href="">Artwork</a></li>
+        <header>
+            <h1 class="logo">singolo<a class="logo-simbol">*</a></h1>
+            <nav>
+                <ul class="navigation" id="headerNav">
+                    <li class="navigation--item navigation--item-selected"><a href="">home</a></li>
+                    <li class="point"></li>
+                    <li class="navigation--item"><a href="#ourServices">services</a></li>
+                    <li class="point"></li>
+                    <li class="navigation--item"><a href="#Portfolio">portfolio</a></li>
+                    <li class="point"></li>
+                    <li class="navigation--item"><a href="#AboutUs">about</a></li>
+                    <li class="point"></li>
+                    <li class="navigation--item"><a href="#contacts">contact</a></li>
                 </ul>
-            </section>    
-        </section>
-        <section class="mainPortfolio">
-            <section class="main-Portfolio container">
-                <div class="img11 imgs"></div>
-                <div class="img12 imgs"></div>
-                <div class="img13 imgs"></div>
-                <div class="img14 imgs"></div>
-                <div class="img21 imgs"></div>
-                <div class="img22 imgs"></div>
-                <div class="img23 imgs"></div>
-                <div class="img24 imgs"></div>
-                <div class="img31 imgs"></div>
-                <div class="img32 imgs"></div>
-                <div class="img33 imgs"></div>
-                <div class="img34 imgs"></div>
+            </nav> 
+            <div class="headerBottom"></div>       
+        </header>
+        
+        <main>
+            <section class="mainSlider">
+                <div class="main-slider--left" id="left"></div>
+                <div class="main-slider--right" id="right"></div>
+                <section class="main-slider" id="slider1">
+                    <div class="main-slider--verticalPhone"></div>
+                    <div id="buttonVertical"></div>
+                    <div id="windowVertical"></div>
+                    <div class="main-slider--horizontalPhone"></div>
+                    <div id="buttonHorizontal"></div>
+                    <div id="windowHorizontal"></div>
+                    <div class="main-sliderBottom"></div>
+                </section>
+                <section class="main-slider2 hidden" id="slider2">
+                    <div class="main-slider2Bottom"></div>
+                </section>
             </section>
-            <figure class="mainBottom"></figure> 
-        </section>
-        <section class="footerPortfolio" id="AboutUs">
-            <section class="container">
-                <h2>About Us</h2>
-                <p class="mainParagraph">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor 
-                    <br> ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                <section class="Workers">
-                    <article class="AdamJensen">
-                        <div class="img"></div>
-                        <h3>Adam Jensen</h3>
-                        <p>Quisque luctus, quam eget molestie commodo, lacus purus  
-                            <br> cursus purus, nec rutrum tellus dolor id lorem.</p>
-                        <div class="icons">
-                            <a href="" class="icons-face"></a>
-                            <a href="" class="icons-google"></a>
-                            <a href="" class="icons-twit"></a>
-                            <a href="" class="icons-in"></a>
-                        </div>    
-                    </article>
-                    <article class="DesmondMiles">
-                        <div class="img"></div>
-                        <h3>Desmond Miles</h3>
-                        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus <br>
-                            in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                        <div class="icons">
-                            <a href="" class="icons-face"></a>
-                            <a href="" class="icons-google"></a>
-                            <a href="" class="icons-twit"></a>
-                            <a href="" class="icons-in"></a>
-                        </div>    
-                    </article>
-                    <article class="ScolaraVisari">
-                        <div class="img"></div>
-                        <h3>Scolara Visari</h3>
-                        <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet <br> 
-                            turpis, et consequat felis. Quisque condimentum.</p>
-                        <div class="icons">
-                            <a href="" class="icons-face"></a>
-                            <a href="" class="icons-google"></a>
-                            <a href="" class="icons-twit"></a>
-                            <a href="" class="icons-in"></a>
-                        </div>
-                    </article>
-                </section> 
-            </section>   
-        </section>   
-        <section class="form">
-            <form action="form.doc" class="container">
-                <p class="hForm">Get a Quote</p>
-                <p class="pForm">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat <br>
-                    porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+            <section class="main-ourServices" id="ourServices">
+                <h2 class="h2OurServices">Our Services</h2>
+                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor
+                    <br> ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
                 </p>
-                <div class="formMain">
-                    <section class="formInputs">
-                        <input type="text" class="input" placeholder="Name (Required)" required>
-                        <input type="text" class="input" placeholder="Email (Required)" required>
-                        <input type="text" class="input" placeholder="Subject" >
-                        <textarea class="input-big" placeholder="Describe your project in detail..."></textarea>
-                    </section>
-                    <section class="Contacts">
-                        <p class="form-contacts--h">Contact information</p>
-                        <p class="form-contacts--p">Quisque hendrerit purus dapibus, ornare nibh vitae, viver- <br> 
-                            ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat <br> 
-                            libero. Nulla sed nunc et tortor luctus faucibus. Morbi at <br>
-                            aliquet turpis, et consequat felis. 
-                        </p>
-                        <div class="form-contacts" id="contacts">
-                            <div class="form-contacts-single">
-                                <a href="" class="form-contacts-addres-icon form-icons"></a>
-                                <p class="form-contacts-addres-p form-icons-p">Elm St. 14/05 Lost City </p>
-                            </div>
-                            <div class="form-contacts-single">
-                                <a href="tel:035283318635" class="form-contacts-phone-icon form-icons"></a>
-                                <p class="form-contacts-phone-p form-icons-p">03528 331 86 35 </p>
-                            </div>    
-                            <div class="form-contacts-single">
-                                <a href="mail:info@singolo.com" class="form-contacts-mail-icon form-icons"></a>
-                                <p class="form-contacts-mail-p form-icons-p">info@singolo.com </p>
-                            </div>
-                            <input type="button" value="Submit" class="formButton">
+                <section class="articles">
+                    <div class="articles-customDesign">
+                        <div class="articles-customDesign--img"></div>
+                        <div class="articles-customDesign--text">
+                            <h3>Custom Design</h3>
+                            <p>Curabitur vestibulum eget mauris quis <br> laoreet.  Phasellus in quam laoreet, viverra <br> lacus ut, ultrices velit.</p>
                         </div>
-                    </section>
-                </div>    
-            </form>
-            <div class="formBottomLine"></div>
-        </section> 
-    </main>  
-    <footer>
-        <section class="container">
-            <p class="footer-p">© Copyright 2013</p>
-            <a href="" class="footer-icon-facebook footer-icons"></a>
-            <a href="" class="footer-icon-google footer-icons"></a>
-            <a href="" class="footer-icon-twiter footer-icons"></a>
-            <a href="" class="footer-icon-linkedLn footer-icons"></a>
-        </section>
-    <div class="footerBottomLine"></div>
-    </footer>   
+                    </div>
+                    <div class="articles-inovativIdeas">
+                        <div class="articles-inovativIdeas--img"></div>
+                        <div class="articles-inovativIdeas--text">
+                            <h3>Inovative Ideas</h3>
+                            <p>Quisque luctus, quam eget molestie com- <br> modo, lacus purus cursus purus, nec <br> rutrum tellus dolor id lorem.</p>
+                        </div>
+                    </div>
+                    <div class="articles-loveIsTheAnswer">
+                        <div class="articles-loveIsTheAnswer--img"></div>
+                        <div class="articles-loveIsTheAnswer--text">
+                            <h3>Love Is The Answer</h3>
+                            <p>Nulla sed nunc et tortor luctus faucibus. <br> Morbi at aliquet turpis, et consequat felis. <br> Quisque condimentum.</p>
+                        </div>
+                    </div>
+                    <div class="articles-responsiveLayout">
+                        <div class="articles-responsiveLayout--img"></div>
+                        <div class="articles-responsiveLayout--text">
+                            <h3>Responsive Layout</h3>
+                            <p>Sed porttitor placerat rhoncus. In at nunc <br> tellus. Maecenas blandit nunc ligula. Prae- <br> sent elit leo.</p>
+                        </div>
+                    </div>
+                    <div class="articles-support">
+                        <div class="articles-support--img"></div>
+                        <div class="articles-support--text">
+                            <h3>24 / 7 Support</h3>
+                            <p>Vivamus vel quam lacinia, tincidunt dui <br> non, vehicula nisi. Nulla a sem erat. Pellen- <br> tesque egestas venenatis lorem .</p>
+                        </div>
+                    </div>
+                    <div class="articles-feelLikeAStar">
+                        <div class="articles-feelLikeAStar--img"></div>
+                        <div class="articles-feelLikeAStar--text">
+                            <h3>Feel Like A Star</h3>
+                            <p>Quisque hendrerit purus dapibus, ornare <br> nibh vitae, viverra nibh. Fusce vitae <br> aliquam tellus.</p>
+                        </div>
+                    </div>
+                </section>
+                <div class="textBottom"></div>
+            </section> 
+            <section class="headerPortfolio" id="Portfolio">
+                <section class="header container">
+                    <p class="h1Portfolio">Portfolio</p>
+                    <p class="pPortfolio">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                    <ul class="nav" id="portfolioMenu">
+                        <li class="nav-item--selected nav-item" id="all"><a href="#Portfolio">All</a></li>
+                        <li class="nav-item" id="webDesign"><a href="#Portfolio">Web Design</a></li>
+                        <li class="nav-item" id="graphicDesign"><a href="#Portfolio">Graphic Design</a></li>
+                        <li class="nav-item" id="artwork"><a href="#Portfolio">Artwork</a></li>
+                    </ul>
+                </section>    
+            </section>
+            <section class="mainPortfolio">
+                <section class="main-Portfolio container" id="imgsContainer">
+                    <div class="img0 imgs"></div>
+                    <div class="img1 imgs"></div>
+                    <div class="img2 imgs"></div>
+                    <div class="img3 imgs"></div>
+                    <div class="img4 imgs"></div>
+                    <div class="img5 imgs"></div>
+                    <div class="img6 imgs"></div>
+                    <div class="img7 imgs"></div>
+                    <div class="img8 imgs"></div>
+                    <div class="img9 imgs"></div>
+                    <div class="img10 imgs"></div>
+                    <div class="img11 imgs"></div>
+                </section>
+                <figure class="mainBottom"></figure> 
+            </section>
+            <section class="footerPortfolio" id="AboutUs">
+                <section class="container">
+                    <h2>About Us</h2>
+                    <p class="mainParagraph">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor 
+                        <br> ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                    <section class="Workers">
+                        <article class="AdamJensen">
+                            <div class="img"></div>
+                            <h3>Adam Jensen</h3>
+                            <p>Quisque luctus, quam eget molestie commodo, lacus purus  
+                                <br> cursus purus, nec rutrum tellus dolor id lorem.</p>
+                            <div class="icons">
+                                <a href="" class="icons-face icon"></a>
+                                <a href="" class="icons-google icon"></a>
+                                <a href="" class="icons-twit icon"></a>
+                                <a href="" class="icons-in icon"></a>
+                            </div>    
+                        </article>
+                        <article class="DesmondMiles">
+                            <div class="img"></div>
+                            <h3>Desmond Miles</h3>
+                            <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus <br>
+                                in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                            <div class="icons">
+                                <a href="" class="icons-face icon"></a>
+                                <a href="" class="icons-google icon"></a>
+                                <a href="" class="icons-twit icon"></a>
+                                <a href="" class="icons-in icon"></a>
+                            </div>    
+                        </article>
+                        <article class="ScolaraVisari">
+                            <div class="img"></div>
+                            <h3>Scolara Visari</h3>
+                            <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet <br> 
+                                turpis, et consequat felis. Quisque condimentum.</p>
+                            <div class="icons">
+                                <a href="" class="icons-face icon"></a>
+                                <a href="" class="icons-google icon"></a>
+                                <a href="" class="icons-twit icon"></a>
+                                <a href="" class="icons-in icon"></a>
+                            </div>
+                        </article>
+                    </section> 
+                </section>   
+            </section>   
+            <section class="form">
+                <form action="form.doc" class="container">
+                    <p class="hForm">Get a Quote</p>
+                    <p class="pForm">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat <br>
+                        porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+                    </p>
+                    <div class="formMain">
+                        <section class="formInputs">
+                            <input type="text" class="input" placeholder="Name (Required)" id="name" required>
+                            <input type="text" class="input" placeholder="Email (Required)" id="email" required>
+                            <input type="text" class="input" placeholder="Subject" id="subject">
+                            <textarea class="input-big" placeholder="Describe your project in detail..." id="description"></textarea>
+                        </section>
+                        <section class="Contacts">
+                            <p class="form-contacts--h">Contact information</p>
+                            <p class="form-contacts--p">Quisque hendrerit purus dapibus, ornare nibh vitae, viver- <br> 
+                                ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat <br> 
+                                libero. Nulla sed nunc et tortor luctus faucibus. Morbi at <br>
+                                aliquet turpis, et consequat felis. 
+                            </p>
+                            <div class="form-contacts" id="contacts">
+                                <div class="form-contacts-single">
+                                    <a href="" class="form-contacts-addres-icon form-icons"></a>
+                                    <p class="form-contacts-addres-p form-icons-p">Elm St. 14/05 Lost City </p>
+                                </div>
+                                <div class="form-contacts-single">
+                                    <a href="tel::035283318635" class="form-contacts-phone-icon form-icons"></a>
+                                    <p class="form-contacts-phone-p form-icons-p">03528 331 86 35 </p>
+                                </div>    
+                                <div class="form-contacts-single">
+                                    <a href="mailto::info@singolo.com" class="form-contacts-mail-icon form-icons"></a>
+                                    <p class="form-contacts-mail-p form-icons-p">info@singolo.com </p>
+                                </div>
+                                <input type="button" value="Submit" class="formButton" id="button">
+                            </div>
+                        </section>
+                    </div>     
+                </form> 
+                <div class="formBottomLine"></div>
+            </section> 
+        </main>
+        <div id="messageBlock" class="hidden">
+            <div id="message">
+                <p class="header">Письмо отправлено</p>
+                <p id="resultSubject"></p>
+                <p id="resultDescription"></p>
+                <button id="closeButton">OK</button>
+            </div>
+        </div>
+        <footer>
+            <section class="container">
+                <p class="footer-p">© Copyright 2013</p>
+                <a href="" class="footer-icon-facebook footer-icons"></a>
+                <a href="" class="footer-icon-google footer-icons"></a>
+                <a href="" class="footer-icon-twiter footer-icons"></a>
+                <a href="" class="footer-icon-linkedLn footer-icons"></a>
+            </section>
+        <div class="footerBottomLine"></div>
+        </footer>
+        <script src="script.js"></script>   
     </body>
 </html>    
