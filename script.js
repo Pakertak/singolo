@@ -12,7 +12,6 @@ const BUTTON_HORIZONTAL = document.getElementById('buttonHorizontal');
 const BUTTON_LEFT = document.getElementById('left');
 const BUTTON_RIGHT = document.getElementById('right');
 
-
 HEADER_NAV.addEventListener('click', (event) => {
 
     HEADER_NAV.querySelectorAll('li').forEach(el=>el.classList.remove('navigation--item-selected'));
@@ -50,6 +49,7 @@ BUTTON.addEventListener("click", (event) => {
   });
 
 CLOSE_BUTTON.addEventListener('click', () => {
+
     document.getElementById('form').reset();
     document.getElementById('resultSubject').innerText = '';
     document.getElementById('resultDescription').innerText = '';
@@ -123,29 +123,57 @@ BUTTON_HORIZONTAL.addEventListener('click', ()=>{
         document.getElementById('windowHorizontal').classList.remove('windowOff');
 });
 
-BUTTON_LEFT.addEventListener('click', ()=>{
 
-    if(document.getElementById('slider1').classList.contains('hidden')) { 
-        document.getElementById('slider2').classList.add('hidden'); 
-        document.getElementById('slider1').classList.remove('hidden');
-    }
+let items = document.querySelectorAll('.slider-item');
+let currentItem = 0;
+let isEnabled = true;
+
+function changeCurrentItem(n) {
+    currentItem = (n + items.length) % items.length;
+};
+
+function hideItem(direction){
+    isEnabled = false;
+    items[currentItem].classList.add(direction);
+    items[currentItem].addEventListener('animationend', function(){
+        this.classList.remove('active', direction);
+    });
+};
+
+function showItem(direction){
+    isEnabled = false;
+    items[currentItem].classList.add('next', direction);
+    items[currentItem].addEventListener('animationend', function(){
+        this.classList.remove('next', direction);
+        this.classList.add('active');
+        isEnabled = true;
+    });
+};
+
+function previousItem(n){
+    hideItem('to-left');
+    changeCurrentItem(n-1);
+    showItem('from-right');
+};
+
+function nextItem(n){
+    hideItem('to-right');
+    changeCurrentItem(n+1);
+    showItem('from-left');
+};
+
+BUTTON_LEFT.addEventListener('click', function () {
     
-    else {
-        document.getElementById('slider2').classList.remove('hidden');
-        document.getElementById('slider1').classList.add('hidden');
+    if(isEnabled) {
+        previousItem(currentItem);
     }
+
 });
 
-BUTTON_RIGHT.addEventListener('click', ()=>{
+BUTTON_RIGHT.addEventListener('click', function(){
 
-    if(document.getElementById('slider1').classList.contains('hidden')) { 
-        document.getElementById('slider2').classList.add('hidden'); 
-        document.getElementById('slider1').classList.remove('hidden');
-    }
-
-    else {
-        document.getElementById('slider2').classList.remove('hidden');
-        document.getElementById('slider1').classList.add('hidden');
+    if(isEnabled) {
+        nextItem(currentItem);
     }
 
 });

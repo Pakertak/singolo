@@ -110,32 +110,92 @@ main{
     margin: 0;
     padding: 0;
 }
-.mainSlider{
+
+.slider-items{
+    position: absolute;
+    width: 1020px;
+    height: 600px;
     display: flex;
+    overflow: hidden;
+}
+
+.mainSlider{
+    display: block;
     position: relative;
     width: 1020px;
+    height: 600px;
 }
+
+.slider-item{
+    flex: none;
+    animation: 0.5s ease-in-out;
+}
+
+.to-left{
+    animation-name: left;
+}
+
+.to-right{
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left{
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+.from-right{
+    animation-name: right;
+}
+
+@keyframes left{
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes right{
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
 .main-slider{
     width: 1020px;
     height: 600px;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     margin: 0;
-    position: relative;
+    position: absolute;
+    left: 0;
     background: #f06c64;
     overflow: hidden;
 }
-.main-slider.hidden{
-    display: none;
-}
+
+
 .main-slider2{
     width: 1020px;
     height: 600px;
-    display: flex;
+    display: none;
+    position: absolute;
+    left: 0;
     margin: 0;
     background: url(assets/Slide-2.png);
     overflow: hidden;
 }
+
+.slider-item.active,
+.slider-item.next{
+    display: flex;
+}
+
 .main-slider2Bottom{
     width: 1020px;
     height: 7px;
@@ -143,9 +203,7 @@ main{
     background-color: #6656f7dc;
     top: 593px;
 }
-.main-slider2.hidden{
-    display: none;
-}
+
 .main-slider--verticalPhone{
     width: 245px;
     height: 570px;
@@ -155,6 +213,7 @@ main{
     margin-left: 110px;
     background: url(assets/verticalPhone.png);
 }
+
 #buttonHorizontal{
     position: absolute;
     width: 32px;
@@ -163,6 +222,7 @@ main{
     left: 438px;
     border-radius: 50%;
 }
+
 #buttonVertical{
     position: absolute;
     width: 32px;
@@ -171,6 +231,7 @@ main{
     left: 204px;
     border-radius: 50%;
 }
+
 #windowVertical{
     position: absolute;
     width: 190px;
@@ -182,9 +243,11 @@ main{
     background-color: black;
     opacity: 1;
 }
+
 #windowVertical.windowOff{
     opacity: 0;
 }
+
 #windowHorizontal{
     position: absolute;
     width: 336px;
@@ -196,9 +259,11 @@ main{
     background-color: black;
     opacity: 1;
 }
+
 #windowHorizontal.windowOff{
     opacity: 0;
 }
+
 .main-slider--horizontalPhone{
     width: 600px;
     height: 400px;
@@ -209,34 +274,40 @@ main{
     left: 5px;
     background: url(assets/horizontalPhone.png);
 }
+
 .main-slider--left{
-    width: 16px;
-    height: 27px;
+
+    width: 85px;
+    height: 600px;
     position: absolute;
-    top: 280px;
-    left: 42px;
     z-index: 3;
-    background: url(assets/left.png);
+    background: url(assets/left.png) no-repeat;
+    background-color: initial;
+    background-position: center;
 }
+
 .main-slider--left:hover{
-    filter: invert(10%);
     cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.3;
 }
 
 .main-slider--right{
-    width: 16px;
-    height: 27px;
+    width: 85px;
+    height: 600px;
     display: flex;
     justify-self: flex-end;
     position: absolute;
-    top: 280px;
-    left: 965px;
+    left: 935px;
     z-index: 3;
-    background: url(assets/right.png);
+    background: url(assets/right.png) no-repeat;
+    background-position: center;
 }
+
 .main-slider--right:hover{
-    filter: invert(10%);
     cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.3;
 }
 .main-sliderBottom{
     width: 1020px;
