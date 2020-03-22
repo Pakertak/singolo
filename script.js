@@ -12,13 +12,38 @@ const BUTTON_HORIZONTAL = document.getElementById('buttonHorizontal');
 const BUTTON_LEFT = document.getElementById('left');
 const BUTTON_RIGHT = document.getElementById('right');
 
-HEADER_NAV.addEventListener('click', (event) => {
 
-    HEADER_NAV.querySelectorAll('li').forEach(el=>el.classList.remove('navigation--item-selected'));
+const anchors = document.querySelectorAll('a[href*="#"]')
 
-    if(event.target!=HEADER_NAV) 
-        event.target.parentNode.classList.add('navigation--item-selected');
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
 
+
+window.addEventListener('scroll', function(){
+    
+    switch(true){
+        case window.pageYOffset < 610:  HEADER_NAV.querySelectorAll('li').forEach(element => element.classList.remove('navigation--item-selected')); 
+        HEADER_NAV.querySelectorAll('li')[0].classList.add('navigation--item-selected'); break;
+        case (window.pageYOffset >= 610 && window.pageYOffset < 1110):  HEADER_NAV.querySelectorAll('li').forEach(element => element.classList.remove('navigation--item-selected')); 
+        HEADER_NAV.querySelectorAll('li')[2].classList.add('navigation--item-selected'); break;
+        case (window.pageYOffset < 1970 && window.pageYOffset > 1110):  HEADER_NAV.querySelectorAll('li').forEach(element => element.classList.remove('navigation--item-selected')); 
+        HEADER_NAV.querySelectorAll('li')[4].classList.add('navigation--item-selected'); break;
+        case (window.pageYOffset < 2710 && window.pageYOffset > 1970):  HEADER_NAV.querySelectorAll('li').forEach(element => element.classList.remove('navigation--item-selected')); 
+        HEADER_NAV.querySelectorAll('li')[6].classList.add('navigation--item-selected'); break;
+        case window.pageYOffset > 2710:  HEADER_NAV.querySelectorAll('li').forEach(element => element.classList.remove('navigation--item-selected')); 
+        HEADER_NAV.querySelectorAll('li')[8].classList.add('navigation--item-selected'); break; 
+    }
+    
 });
 
 PORTFOLIO_MENU.addEventListener('click', (event) => {

@@ -26,6 +26,7 @@ body{
    width: 1020px; 
    margin: 0 auto;
    font-family: "Lato";
+   scroll-behavior: smooth;
 }
 header{
     height: 95px;
