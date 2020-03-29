@@ -12,7 +12,6 @@ const BUTTON_HORIZONTAL = document.getElementById('buttonHorizontal');
 const BUTTON_LEFT = document.getElementById('left');
 const BUTTON_RIGHT = document.getElementById('right');
 
-
 const anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
@@ -91,7 +90,7 @@ IMGS_CONTAINER.addEventListener('click', (event) => {
  
 PORTFOLIO_ALL.addEventListener('click', () => { 
     IMGS_CONTAINER.querySelectorAll('div').forEach((element, i) => {
-        for(let j = 0; j < 11; j++)
+        for(let j = 0; j < 12; j++)
         element.classList.remove('img' + j);
         element.classList.add('img' + i);
    });
@@ -99,17 +98,17 @@ PORTFOLIO_ALL.addEventListener('click', () => {
 
 PORTFOLIO_WEB_DESIGN.addEventListener('click', () => {
     IMGS_CONTAINER.querySelectorAll('div').forEach((element, i) => {
-        for(let j = 0; j < 11; j++)
+        for(let j = 0; j < 12; j++)
         element.classList.remove('img' + j);
         element.classList.remove('img' + i);
-        element.classList.add('img' + Math.floor(Math.random() * Math.floor(11)));
+        element.classList.add('img' + Math.floor(Math.random() * Math.floor(12)));
    }); 
 });
 
 PORTFOLIO_GRAPHIC_DESIGN.addEventListener('click', () => {
     IMGS_CONTAINER.querySelectorAll('div').forEach((element, i)=>{
 
-        for(let j = 0; j < 11; j++)
+        for(let j = 0; j < 12; j++)
         element.classList.remove('img' + j);
 
         element.classList.remove('img' + i);
@@ -121,7 +120,7 @@ PORTFOLIO_GRAPHIC_DESIGN.addEventListener('click', () => {
 PORTFOLIO_ARTWORK.addEventListener('click', ()=>{
     IMGS_CONTAINER.querySelectorAll('div').forEach((element, i)=>{
 
-        for(let j = 0; j < 11; j++)
+        for(let j = 0; j < 12; j++)
         element.classList.remove('img' + j);
 
         element.classList.remove('img' + i);
